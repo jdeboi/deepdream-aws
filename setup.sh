@@ -15,4 +15,4 @@ wget --output-document=output.jpg http://orig13.deviantart.net/90b6/f/2011/145/a
 # convert daniel.png daniel.jpg
 
 # Run:
-# nohup bash layers.sh output.jpg &
+nohup bash layers.sh output.jpg &
