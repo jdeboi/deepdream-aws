@@ -11,7 +11,7 @@ open https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceW
 # Choose an existing key pair: reuse-elasticsearch.
 # Wait until fulfilled. Click on instance. Check public DNS.
 
-dns=ec2-52-91-225-26.compute-1.amazonaws.com
+dns=ec2-54-174-230-59.compute-1.amazonaws.com
 pem=~/Documents/keys/deepdream.pem
 # Don't forget to chmod go-rwx $pem
 
