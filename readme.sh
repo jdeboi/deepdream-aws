@@ -15,13 +15,14 @@ dns=ec2-54-174-230-59.compute-1.amazonaws.com
 pem=~/Documents/keys/deepdream.pem
 # Don't forget to chmod go-rwx $pem
 
-# Change 'danielvarga' so that this points to your fork:
+
 ssh -i $pem ubuntu@$dns wget https://raw.githubusercontent.com/jdeboi/deepdream-aws/master/setup.sh
 # Also, in your fork, change the git SSH URL in setup.sh to point to your fork.
 
 ssh -i $pem ubuntu@$dns bash setup.sh
 # ...wait some, and then:
 scp -i $pem ubuntu@$dns:./deepdream-aws/daniel.conv2-3x3_reduce.jpg .
+#scp -i $pem ubuntu@$dns:./deepdream-aws/output.conv2-3x3_reduce.jpg .
 # ...wait a lot, and then:
 mkdir daniel
 scp -i $pem ubuntu@$dns:./deepdream-aws/daniel.*.jpg daniel/
